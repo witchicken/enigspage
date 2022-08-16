@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+
+  font-family: noto-sans-cjk-kr, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+.Home {
+  height: 5000px;
+  .Home_main {
+    height: 100vh;
+    position: relative;
+    .Home_slide {
+      position: absolute;
+      background: center / cover no-repeat url("../img/comp_developer.jpg");
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      filter: brightness(70%);
+    }
+  }
+}

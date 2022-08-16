@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  transition: all 0.4s;
+  &:hover {
+    height: 280px !important;
+    background-color: white;
+    overflow: visible;
+    .header_back a {
+      color: black !important;
+    }
+    .header_nav nav ul li {
+      color: black !important;
+    }
+    .header_company_name span:last-child {
+      color: black !important;
+    }
+  }
+  .header_back {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:first-child {
+      margin-right: 10px;
+    }
+  }
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin: 0 auto;
+    .header_company {
+      display: flex;
+      .header_company_logo {
+        width: 50px;
+        height: 50px;
+        background: center / cover no-repeat url("../wmTrans.png");
+      }
+      .header_company_name {
+        text-decoration: none;
+        span:first-child {
+          font-size: 40px;
+          color: rgb(173, 171, 171);
+        }
+        span:last-child {
+          font-size: 45px;
+          color: white;
+        }
+      }
+    }
+    .header_nav {
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          min-width: 700px;
+          li {
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            font-family: noto-sans-cjk-kr, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            .header_nav_detail {
+              margin-top: 35px;
+              div:not(:first-child) {
+                margin-top: 20px;
+              }
+              div {
+                color: #888;
+                transition: all 0.5s;
+                &:hover {
+                  color: purple;
+                }
+              }
+            }
+            p {
+              transition: all 1s;
+              &:hover {
+                transform-origin: top left;
+                transform: rotateX(360deg) scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

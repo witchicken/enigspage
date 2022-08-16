@@ -1,0 +1,93 @@
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  transition: all 0.4s;
+}
+.header:hover {
+  height: 280px !important;
+  background-color: white;
+  overflow: visible;
+}
+.header:hover .header_back a {
+  color: black !important;
+}
+.header:hover .header_nav nav ul li {
+  color: black !important;
+}
+.header:hover .header_company_name span:last-child {
+  color: black !important;
+}
+.header .header_back {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.header .header_back a {
+  color: white;
+  text-decoration: none;
+}
+.header .header_back a:first-child {
+  margin-right: 10px;
+}
+.header .header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+  margin: 0 auto;
+}
+.header .header_container .header_company {
+  display: flex;
+}
+.header .header_container .header_company .header_company_logo {
+  width: 50px;
+  height: 50px;
+  background: center/cover no-repeat url("../wmTrans.png");
+}
+.header .header_container .header_company .header_company_name {
+  text-decoration: none;
+}
+.header .header_container .header_company .header_company_name span:first-child {
+  font-size: 40px;
+  color: rgb(173, 171, 171);
+}
+.header .header_container .header_company .header_company_name span:last-child {
+  font-size: 45px;
+  color: white;
+}
+.header .header_container .header_nav nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 700px;
+}
+.header .header_container .header_nav nav ul li {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.header .header_container .header_nav nav ul li .header_nav_detail {
+  margin-top: 35px;
+}
+.header .header_container .header_nav nav ul li .header_nav_detail div:not(:first-child) {
+  margin-top: 20px;
+}
+.header .header_container .header_nav nav ul li .header_nav_detail div {
+  color: #888;
+  transition: all 0.5s;
+}
+.header .header_container .header_nav nav ul li .header_nav_detail div:hover {
+  color: purple;
+}
+.header .header_container .header_nav nav ul li p {
+  transition: all 1s;
+}
+.header .header_container .header_nav nav ul li p:hover {
+  transform-origin: top left;
+  transform: rotateX(360deg) scale(1.2);
+}
+
+/*# sourceMappingURL=Header.css.map */
