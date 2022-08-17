@@ -4,6 +4,8 @@
   overflow: hidden;
   height: 100px;
   transition: all 0.4s;
+  top: 0;
+  z-index: 9999;
   &:hover {
     height: 280px !important;
     background-color: white;
@@ -68,7 +70,7 @@
             font-weight: 700;
             font-style: normal;
             .header_nav_detail {
-              margin-top: 35px;
+              margin-top: 50px;
               div:not(:first-child) {
                 margin-top: 20px;
               }

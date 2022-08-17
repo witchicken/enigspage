@@ -7,19 +7,103 @@
 
   font-style: normal;
 }
+@mixin backgroundProps {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(70%);
+  transition: opacity 0.5s linear;
+  transition: transform 3s linear;
+}
+@mixin text_deco {
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  width: 400px;
+  transition: all 1.5s ease-in-out;
+  color: white;
+  .Home_main_description_title {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .Home_main_description_content {
+    font-size: 26px;
+  }
+}
 .Home {
-  height: 5000px;
+  height: 2000px;
   .Home_main {
     height: 100vh;
     position: relative;
-    .Home_slide {
-      position: absolute;
+    .Home_slide_1 {
       background: center / cover no-repeat url("../img/comp_developer.jpg");
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      filter: brightness(70%);
+      @include backgroundProps;
+      opacity: 0;
+      .Home_main_description_1 {
+        @include text_deco;
+        left: 200px;
+      }
     }
+    .Home_slide_2 {
+      background: center / cover no-repeat url("../img/comp_suit.jpg");
+      @include backgroundProps;
+      opacity: 0;
+      .Home_main_description_2 {
+        @include text_deco;
+        left: -200px;
+      }
+    }
+    .Home_slide_3 {
+      background: center / cover no-repeat url("../img/comp_man_ballon.jpg");
+      @include backgroundProps;
+      opacity: 0;
+      .Home_main_description_3 {
+        @include text_deco;
+      }
+    }
+    .Home_slide_4 {
+      background: center / cover no-repeat url("../img/comp_black_chot.jpg");
+      @include backgroundProps;
+      opacity: 0;
+      .Home_main_description_4 {
+        @include text_deco;
+      }
+    }
+    .visible {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    .Home_slide_btn {
+      position: absolute;
+      z-index: 9999;
+      left: 50px;
+      bottom: 100px;
+      color: white;
+      span:not(:nth-child(2)) {
+        font-size: 30px;
+        cursor: pointer;
+      }
+      span:nth-child(2) {
+        font-size: 30px;
+        padding: 0 20px;
+      }
+    }
+  }
+  .btn_toTop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: -9999;
+    background-color: green;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .if_scroll {
+    opacity: 1 !important;
+    z-index: 9999 !important;
   }
 }

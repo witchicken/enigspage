@@ -4,6 +4,8 @@
   overflow: hidden;
   height: 100px;
   transition: all 0.4s;
+  top: 0;
+  z-index: 9999;
 }
 .header:hover {
   height: 280px !important;
@@ -70,7 +72,7 @@
   font-style: normal;
 }
 .header .header_container .header_nav nav ul li .header_nav_detail {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 .header .header_container .header_nav nav ul li .header_nav_detail div:not(:first-child) {
   margin-top: 20px;
