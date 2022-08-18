@@ -91,5 +91,20 @@
   transform-origin: top left;
   transform: rotateX(360deg) scale(1.2);
 }
+.header .btn_toTop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: -9999;
+  background-color: green;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+.header .if_scroll {
+  opacity: 1 !important;
+  z-index: 9999 !important;
+}
 
 /*# sourceMappingURL=Header.css.map */

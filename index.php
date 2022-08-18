@@ -50,9 +50,24 @@
         <?php include_once 'header.inc' ?>
         
       </section>
-      <div class="btn_toTop if_scroll">
-        Top
-      </div>
+      <section class="Home_skill">
+        <h1 class="Home_skill_title">Technology</h1>
+        <h3 class="Home_skill_subtitle">Lorem, ipsum dolor.</h3>
+        <div class="Home_skill_list">
+          <div>
+            <h2>Front</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
+          </div>
+          <div>
+            <h2>Back</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div>
+            <h2>DB</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A repellat libero dolor.</p>
+          </div>
+        </div>
+      </section>
 
     </div>
     
