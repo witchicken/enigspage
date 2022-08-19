@@ -33,7 +33,6 @@
   }
 }
 .Home {
-  height: 2000px;
   .Home_main {
     height: 100vh;
     position: relative;
@@ -93,7 +92,8 @@
   }
   .Home_skill {
     margin: 0 auto;
-    min-width: 800px;
+    min-width: 600px;
+    text-align: center;
     .Home_skill_title {
       font-size: 45px;
     }
@@ -104,11 +104,57 @@
     .Home_skill_list {
       display: flex;
       justify-content: space-between;
-      div {
+      .Home_skill_detail {
         color: white;
         background-color: #888;
         height: 400px;
         width: 250px;
+
+        position: relative;
+        &:hover {
+          .Home_skill_text {
+            background-color: blue;
+            bottom: 0px;
+          }
+        }
+        .Home_skill_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          bottom: -60px;
+          left: 0;
+          right: 0;
+          height: 220px;
+          position: absolute;
+          transition: all 0.5s linear;
+          color: white;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .Home_portfolio {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .Home_portfolio_title {
+      width: 300px;
+      text-align: center;
+      h1 {
+        font-size: 46px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .Home_portfolio_list {
+      width: 800px;
+      display: flex;
+      justify-content: space-between;
+      .Home_portfolio_detail {
+        height: 300px;
       }
     }
   }

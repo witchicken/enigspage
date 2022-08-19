@@ -12,7 +12,8 @@
     
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/Home.css">
-
+    <link rel="stylesheet" href="./src/css/Header.css">
+    <link rel="stylesheet" href="./src/css/Footer.css">
   </head>
   <body>
     <div class="Home">
@@ -51,27 +52,78 @@
         
       </section>
       <section class="Home_skill">
-        <h1 class="Home_skill_title">Technology</h1>
+        <h1 class="Home_skill_title">skills</h1>
         <h3 class="Home_skill_subtitle">Lorem, ipsum dolor.</h3>
         <div class="Home_skill_list">
-          <div>
-            <h2>Front</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
+          <div class="Home_skill_detail">
+            <div class="Home_skill_text">
+              <h2>Front</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
+              <a>more skills</a>
+            </div>
           </div>
-          <div>
-            <h2>Back</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div>
-            <h2>DB</h2>
+          <div class="Home_skill_detail">
+            <div class="Home_skill_text">
+              <h2>Back</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a>more skills</a>
+
+            </div>
+            
+          </div class="Home_skill_text">
+          <div class="Home_skill_detail">
+            <div><h2>DB</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A repellat libero dolor.</p>
+              <a>more skills</a>
+          </div>
+            
           </div>
         </div>
       </section>
+      <section class="Home_portfolio">
+        <div class="Home_portfolio_title">
+          <h1>Portfolio</h1>
+          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ut debitis sint laudantium dolores deleniti aperiam, inventore, voluptatum perferendis veritatis excepturi labore enim omnis at repudiandae ipsum minus error culpa?</h3>
+        </div>
+        
+        <div class="Home_portfolio_list">
+          <div class="Home_portfolio_detail">
+              <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
 
+          </div>
+          <div class="Home_portfolio_detail">
+            <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
+          </div>
+          <div class="Home_portfolio_detail">
+            <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
+
+          </div>
+          <div class="Home_portfolio_detail">
+            <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
+
+          </div>
+          <div class="Home_portfolio_detail">
+            <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
+
+          </div>
+          <div class="Home_portfolio_detail">
+            <div class="Home_portfolio_img"></div>
+            <a>lorem</a>
+
+          </div>
+        </div>
+      </section>
+      <?php include_once 'footer.inc' ?>
     </div>
     
 
     <script src="./src/js/Home.js" ></script>
+    <script src="./src/js/Header.js" ></script>
   </body>
 </html>

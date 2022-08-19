@@ -5,9 +5,6 @@
   font-style: normal;
 }
 
-.Home {
-  height: 2000px;
-}
 .Home .Home_main {
   height: 100vh;
   position: relative;
@@ -33,19 +30,11 @@
   color: white;
   left: 200px;
 }
-.Home
-  .Home_main
-  .Home_slide_1
-  .Home_main_description_1
-  .Home_main_description_title {
+.Home .Home_main .Home_slide_1 .Home_main_description_1 .Home_main_description_title {
   font-size: 40px;
   margin-bottom: 15px;
 }
-.Home
-  .Home_main
-  .Home_slide_1
-  .Home_main_description_1
-  .Home_main_description_content {
+.Home .Home_main .Home_slide_1 .Home_main_description_1 .Home_main_description_content {
   font-size: 26px;
 }
 .Home .Home_main .Home_slide_2 {
@@ -69,19 +58,11 @@
   color: white;
   left: -200px;
 }
-.Home
-  .Home_main
-  .Home_slide_2
-  .Home_main_description_2
-  .Home_main_description_title {
+.Home .Home_main .Home_slide_2 .Home_main_description_2 .Home_main_description_title {
   font-size: 40px;
   margin-bottom: 15px;
 }
-.Home
-  .Home_main
-  .Home_slide_2
-  .Home_main_description_2
-  .Home_main_description_content {
+.Home .Home_main .Home_slide_2 .Home_main_description_2 .Home_main_description_content {
   font-size: 26px;
 }
 .Home .Home_main .Home_slide_3 {
@@ -104,19 +85,11 @@
   transition: all 1.5s ease-in-out;
   color: white;
 }
-.Home
-  .Home_main
-  .Home_slide_3
-  .Home_main_description_3
-  .Home_main_description_title {
+.Home .Home_main .Home_slide_3 .Home_main_description_3 .Home_main_description_title {
   font-size: 40px;
   margin-bottom: 15px;
 }
-.Home
-  .Home_main
-  .Home_slide_3
-  .Home_main_description_3
-  .Home_main_description_content {
+.Home .Home_main .Home_slide_3 .Home_main_description_3 .Home_main_description_content {
   font-size: 26px;
 }
 .Home .Home_main .Home_slide_4 {
@@ -139,19 +112,11 @@
   transition: all 1.5s ease-in-out;
   color: white;
 }
-.Home
-  .Home_main
-  .Home_slide_4
-  .Home_main_description_4
-  .Home_main_description_title {
+.Home .Home_main .Home_slide_4 .Home_main_description_4 .Home_main_description_title {
   font-size: 40px;
   margin-bottom: 15px;
 }
-.Home
-  .Home_main
-  .Home_slide_4
-  .Home_main_description_4
-  .Home_main_description_content {
+.Home .Home_main .Home_slide_4 .Home_main_description_4 .Home_main_description_content {
   font-size: 26px;
 }
 .Home .Home_main .visible {
@@ -175,7 +140,8 @@
 }
 .Home .Home_skill {
   margin: 0 auto;
-  min-width: 800px;
+  min-width: 600px;
+  text-align: center;
 }
 .Home .Home_skill .Home_skill_title {
   font-size: 45px;
@@ -188,11 +154,54 @@
   display: flex;
   justify-content: space-between;
 }
-.Home .Home_skill .Home_skill_list div {
+.Home .Home_skill .Home_skill_list .Home_skill_detail {
   color: white;
   background-color: #888;
   height: 400px;
   width: 250px;
+  position: relative;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail:hover .Home_skill_text {
+  background-color: blue;
+  bottom: 0px;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  height: 220px;
+  position: absolute;
+  transition: all 0.5s linear;
+  color: white;
+  padding: 10px;
+}
+.Home .Home_portfolio {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Home .Home_portfolio .Home_portfolio_title {
+  width: 300px;
+  text-align: center;
+}
+.Home .Home_portfolio .Home_portfolio_title h1 {
+  font-size: 46px;
+}
+.Home .Home_portfolio .Home_portfolio_title h3 {
+  font-size: 18px;
+}
+.Home .Home_portfolio .Home_portfolio_list {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail {
+  height: 300px;
 }
 
 /*# sourceMappingURL=Home.css.map */

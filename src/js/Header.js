@@ -1,8 +1,6 @@
 window.onscroll = function () {
   scrollFunction();
-  console.log(document.body.scrollTop);
 };
-console.log("test");
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document
@@ -16,7 +14,7 @@ function scrollFunction() {
       .forEach((item) => (item.style.color = "black"));
     document.querySelector(".header_company_name span:last-child").style.color =
       "black";
-    document.querySelector(".btn_toTop").classList.toggle("if_scroll");
+    document.querySelector(".btn_toTop").classList.add("if_scroll");
   } else {
     document
       .querySelectorAll(".header_nav ul li")
@@ -29,6 +27,6 @@ function scrollFunction() {
       .forEach((item) => (item.style.color = "white"));
     document.querySelector(".header_company_name span:last-child").style.color =
       "white";
-    document.querySelector(".btn_toTop").classList.toggle("if_scroll");
+    document.querySelector(".btn_toTop").classList.remove("if_scroll");
   }
 }
