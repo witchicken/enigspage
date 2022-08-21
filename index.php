@@ -10,14 +10,14 @@
 
     <!--font-->
     
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/Home.css">
-    <link rel="stylesheet" href="./src/css/Header.css">
-    <link rel="stylesheet" href="./src/css/Footer.css">
+    <link rel="stylesheet" href="./src/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="./src/css/Home.css" type="text/css" />
+    <link rel="stylesheet" href="./src/css/Header.css" type="text/css" />
+    <link rel="stylesheet" href="./src/css/Footer.css" type="text/css" />
   </head>
   <body>
     <div class="Home">
-      <section class="Home_main">
+      <section class="Home_main" id="move_main">
         <div class="Home_slide_1 visible" >
           <div class="Home_main_description_1">
             <p class="Home_main_description_title">lorem itsum</p>
@@ -51,7 +51,7 @@
         <?php include_once 'header.inc' ?>
         
       </section>
-      <section class="Home_skill">
+      <section class="Home_skill" id="move_skill">
         <h1 class="Home_skill_title">skills</h1>
         <h3 class="Home_skill_subtitle">Lorem, ipsum dolor.</h3>
         <div class="Home_skill_list">
@@ -61,6 +61,11 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
               <a>more skills</a>
             </div>
+            <div class="Home_skill_bottom">
+
+            </div>
+
+
           </div>
           <div class="Home_skill_detail">
             <div class="Home_skill_text">
@@ -70,18 +75,27 @@
               <a>more skills</a>
 
             </div>
-            
-          </div class="Home_skill_text">
-          <div class="Home_skill_detail">
-            <div><h2>DB</h2>
+            <div class="Home_skill_bottom">
+
+            </div>
+
+          </div>
+
+          <div class="Home_skill_detail"
+          >
+            <div class="Home_skill_text"><h2>DB</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A repellat libero dolor.</p>
               <a>more skills</a>
           </div>
+          <div class="Home_skill_bottom">
+
+          </div>
+
             
           </div>
         </div>
       </section>
-      <section class="Home_portfolio">
+      <section class="Home_portfolio" id="move_portfolio">
         <div class="Home_portfolio_title">
           <h1>Portfolio</h1>
           <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ut debitis sint laudantium dolores deleniti aperiam, inventore, voluptatum perferendis veritatis excepturi labore enim omnis at repudiandae ipsum minus error culpa?</h3>
@@ -107,18 +121,22 @@
             <a>lorem</a>
 
           </div>
-          <div class="Home_portfolio_detail">
-            <div class="Home_portfolio_img"></div>
-            <a>lorem</a>
-
-          </div>
-          <div class="Home_portfolio_detail">
-            <div class="Home_portfolio_img"></div>
-            <a>lorem</a>
-
-          </div>
+          
+          
         </div>
+        <div class="Home_portfolio_more">
+            <a>more portfolio...</a>
+          </div>
+        
       </section>
+      <div class="Home_movebtn">
+        <ul>
+          <li class="Home_movebtn_main">main</li>
+          <li class="Home_movebtn_skill">skill</li>
+          <li class="Home_movebtn_portfolio">portfolio</li>
+          
+        </ul>
+      </div>
       <?php include_once 'footer.inc' ?>
     </div>
     

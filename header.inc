@@ -23,21 +23,30 @@
       <div class="header_nav">
         <nav>
           <ul>
-            <li><p>자기소개</p>
+            <li>
+              <a href="introduction.php">
+                <p>자기소개</p>
+              </a>
               <div class="header_nav_detail">
-                <div>인사말</div>
+                <div><a href="introduction.php#move_hello">인사말</a></div>
                 <div>lorem</div>
                 <div>itsum</div>
                 <div>lorem</div>
               </div>
             </li>
-            <li><p>보유스킬</p>
+            <li>
+            <a href="#">
+                <p>보유스킬</p>
+            </a>
             <div class="header_nav_detail">
                 <div>front</div>
                 <div>back</div>
               </div>
             </li>
-            <li><p>포트폴리오</p>
+            <li>
+            <a href="#">
+                <p>포트폴리오</p>
+            </a>
             <div class="header_nav_detail">
                 <div>1</div>
                 <div>2</div>
@@ -45,10 +54,16 @@
                 <div>4</div>
               </div>
             </li>
-            <li><p>Contact</p>
+            <li>
+            <a href="#">
+                <p>contact</p>
+            </a>
             
             </li>
-            <li><p>search</p>
+            <li>
+            <a href="#">
+                <p>search</p>
+            </a>
             
             </li>
           </ul>

@@ -1,0 +1,30 @@
+.introduction .introduction_main {
+  height: 950px;
+}
+.introduction .introduction_main .introduction_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(0.8);
+  background: center/cover no-repeat url("../img/comp_introduction.jpg");
+}
+.introduction .introduction_main .introduction_msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.introduction .introduction_main .introduction_msg h1 {
+  font-size: 40px;
+  padding-bottom: 40px;
+  color: white;
+  line-height: 60px;
+}
+.introduction .introduction_main .introduction_msg p {
+  font-size: 22px;
+  color: white;
+}
+
+/*# sourceMappingURL=Introduction.css.map */

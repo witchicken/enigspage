@@ -1,0 +1,32 @@
+.introduction {
+  .introduction_main {
+    height: 950px;
+    .introduction_img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      filter: brightness(0.8);
+      background: center / cover no-repeat url("../img/comp_introduction.jpg");
+    }
+    .introduction_msg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        font-size: 40px;
+        padding-bottom: 40px;
+        color: white;
+        line-height: 60px;
+      }
+      p {
+        font-size: 22px;
+        color: white;
+      }
+    }
+  }
+  .troduction_hello {
+  }
+}

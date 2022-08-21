@@ -127,3 +127,25 @@ function toRight() {
 Home_slide_left.addEventListener("click", toLeft);
 Home_slide_right.addEventListener("click", toRight);
 setInterval(toRight, 7000);
+
+//moveTO
+let main_offsetTop = document.getElementById("move_main").offsetTop;
+let skill_offsetTop = document.getElementById("move_skill").offsetTop;
+let portfolio_offsetTop = document.getElementById("move_portfolio").offsetTop;
+
+let Home_movebtn_main = document.querySelector(".Home_movebtn_main");
+let Home_movebtn_skill = document.querySelector(".Home_movebtn_skill");
+let Home_movebtn_portfolio = document.querySelector(".Home_movebtn_portfolio");
+let headerHeight = document.querySelector(".header").offsetHeight;
+
+function scrollfunc(targ) {
+  window.scrollTo({ top: targ - headerHeight, behavior: "smooth" });
+  console.log(document.body.offsetHeight);
+  console.log(document.body.clientHeight);
+}
+
+Home_movebtn_main.addEventListener("click", () => scrollfunc(main_offsetTop));
+Home_movebtn_skill.addEventListener("click", () => scrollfunc(skill_offsetTop));
+Home_movebtn_portfolio.addEventListener("click", () =>
+  scrollfunc(portfolio_offsetTop)
+);

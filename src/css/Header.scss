@@ -1,11 +1,12 @@
 .header {
-  position: relative;
+  position: fixed;
   width: 100%;
   overflow: hidden;
   height: 100px;
   transition: all 0.4s;
   top: 0;
   z-index: 9999;
+  background-color: transparent;
   &:hover {
     height: 280px !important;
     background-color: white;
@@ -13,7 +14,7 @@
     .header_back a {
       color: black !important;
     }
-    .header_nav nav ul li {
+    .header_nav nav ul li a p {
       color: black !important;
     }
     .header_company_name span:last-child {
@@ -69,6 +70,12 @@
             font-family: noto-sans-cjk-kr, sans-serif;
             font-weight: 700;
             font-style: normal;
+            a {
+              p {
+                color: white;
+                text-decoration: none;
+              }
+            }
             .header_nav_detail {
               margin-top: 50px;
               div:not(:first-child) {

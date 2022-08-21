@@ -1,12 +1,5 @@
-* {
-  box-sizing: border-box;
-  font-family: noto-sans-cjk-kr, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .Home .Home_main {
-  height: 100vh;
+  height: 800px;
   position: relative;
 }
 .Home .Home_main .Home_slide_1 {
@@ -17,8 +10,7 @@
   right: 0;
   bottom: 0;
   filter: brightness(70%);
-  transition: opacity 0.5s linear;
-  transition: transform 3s linear;
+  transition: opacity 0.7s linear, transform 3s linear;
   opacity: 0;
 }
 .Home .Home_main .Home_slide_1 .Home_main_description_1 {
@@ -45,8 +37,7 @@
   right: 0;
   bottom: 0;
   filter: brightness(70%);
-  transition: opacity 0.5s linear;
-  transition: transform 3s linear;
+  transition: opacity 0.7s linear, transform 3s linear;
   opacity: 0;
 }
 .Home .Home_main .Home_slide_2 .Home_main_description_2 {
@@ -73,8 +64,7 @@
   right: 0;
   bottom: 0;
   filter: brightness(70%);
-  transition: opacity 0.5s linear;
-  transition: transform 3s linear;
+  transition: opacity 0.7s linear, transform 3s linear;
   opacity: 0;
 }
 .Home .Home_main .Home_slide_3 .Home_main_description_3 {
@@ -100,8 +90,7 @@
   right: 0;
   bottom: 0;
   filter: brightness(70%);
-  transition: opacity 0.5s linear;
-  transition: transform 3s linear;
+  transition: opacity 0.7s linear, transform 3s linear;
   opacity: 0;
 }
 .Home .Home_main .Home_slide_4 .Home_main_description_4 {
@@ -140,36 +129,46 @@
 }
 .Home .Home_skill {
   margin: 0 auto;
+  margin-top: 80px;
   min-width: 600px;
   text-align: center;
+  height: 800px;
 }
 .Home .Home_skill .Home_skill_title {
   font-size: 45px;
+  margin-bottom: 20px;
 }
 .Home .Home_skill .Home_skill_subtitle {
   font-size: 26px;
   color: #888;
+  margin-bottom: 30px;
 }
 .Home .Home_skill .Home_skill_list {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
 }
 .Home .Home_skill .Home_skill_list .Home_skill_detail {
   color: white;
   background-color: #888;
-  height: 400px;
-  width: 250px;
+  height: 500px;
+  width: 350px;
   position: relative;
+  overflow: hidden;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail:hover .Home_skill_bottom {
+  background-color: skyblue;
 }
 .Home .Home_skill .Home_skill_list .Home_skill_detail:hover .Home_skill_text {
-  background-color: blue;
-  bottom: 0px;
+  background-color: skyblue;
+  bottom: 60px;
 }
 .Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_text {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  bottom: -60px;
+  bottom: 20px;
   left: 0;
   right: 0;
   height: 220px;
@@ -178,30 +177,96 @@
   color: white;
   padding: 10px;
 }
+.Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_text h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_text a {
+  display: inline;
+  padding: 3px 6px;
+  border: 1px solid black;
+  background-color: white;
+  margin-top: 10px;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_text a:hover {
+  font-weight: 700;
+}
+.Home .Home_skill .Home_skill_list .Home_skill_detail .Home_skill_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #888;
+}
 .Home .Home_portfolio {
-  min-width: 600px;
+  min-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 800px;
 }
 .Home .Home_portfolio .Home_portfolio_title {
-  width: 300px;
+  width: 500px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .Home .Home_portfolio .Home_portfolio_title h1 {
   font-size: 46px;
+  margin-bottom: 20px;
 }
 .Home .Home_portfolio .Home_portfolio_title h3 {
   font-size: 18px;
+  color: #888;
 }
 .Home .Home_portfolio .Home_portfolio_list {
-  width: 800px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
-.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail {
-  height: 300px;
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_portfolio_img {
+  height: 350px;
+  width: 270px;
+  background-color: #888;
+}
+.Home .Home_portfolio .Home_portfolio_more {
+  margin-top: 40px;
+  font-size: 22px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.Home .Home_portfolio .Home_portfolio_more:hover {
+  background-color: skyblue;
+}
+.Home .Home_movebtn {
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.Home .Home_movebtn ul {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  justify-content: space-between;
+}
+.Home .Home_movebtn ul li {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.7s;
+}
+.Home .Home_movebtn ul li:hover {
+  color: skyblue;
 }
 
 /*# sourceMappingURL=Home.css.map */
