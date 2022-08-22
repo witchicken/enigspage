@@ -1,6 +1,7 @@
 .introduction {
   .introduction_main {
-    height: 950px;
+    position: relative;
+    height: 550px;
     .introduction_img {
       position: absolute;
       left: 0;
@@ -26,7 +27,47 @@
         color: white;
       }
     }
-  }
-  .troduction_hello {
+    .introduction_nav {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      min-width: 800px;
+      nav {
+        ul {
+          width: 100%;
+          display: flex;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            width: 25%;
+            height: 60px;
+            transition: all 1s;
+            &:hover {
+              background-color: rgb(95, 127, 255);
+              li {
+                color: black;
+                font-weight: 700;
+              }
+            }
+            li {
+              text-decoration: none;
+              color: #999;
+              font-size: 18px;
+            }
+          }
+          .intro_active {
+            background-color: rgb(95, 127, 255) !important;
+            li {
+              color: black !important;
+              font-weight: 700 !important;
+            }
+          }
+        }
+      }
+    }
   }
 }

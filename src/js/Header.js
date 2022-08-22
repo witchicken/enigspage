@@ -1,6 +1,5 @@
 window.onscroll = function () {
   scrollFunction();
-  console.log("test");
 };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -16,7 +15,9 @@ function scrollFunction() {
     document.querySelector(".header_company_name span:last-child").style.color =
       "black";
     document.querySelector(".btn_toTop").classList.add("if_scroll");
-    document.querySelector(".Home_movebtn").style.opacity = 1;
+    if (document.querySelector(".Home_movebtn")) {
+      document.querySelector(".Home_movebtn").style.opacity = 1;
+    }
   } else {
     document
       .querySelectorAll(".header_nav ul li a p")
@@ -30,7 +31,9 @@ function scrollFunction() {
     document.querySelector(".header_company_name span:last-child").style.color =
       "white";
     document.querySelector(".btn_toTop").classList.remove("if_scroll");
-    document.querySelector(".Home_movebtn").style.opacity = 0;
+    if (document.querySelector(".Home_movebtn")) {
+      document.querySelector(".Home_movebtn").style.opacity = 0;
+    }
   }
 }
 document.querySelector(".btn_toTop").addEventListener("click", () => {
