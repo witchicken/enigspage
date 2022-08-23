@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 .introduction .introduction_main {
   position: relative;
   height: 550px;
@@ -66,6 +67,77 @@
 .introduction .introduction_main .introduction_nav nav ul .intro_active li {
   color: black !important;
   font-weight: 700 !important;
+}
+.introduction .introduction_hello {
+  font-family: "Nanum Myeongjo", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 80px;
+}
+.introduction .introduction_hello h1 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  text-align: center;
+}
+.introduction .introduction_hello .introduction_hello_container {
+  display: flex;
+  justify-content: center;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_content {
+  width: 50%;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_content h3 {
+  line-height: 40px;
+  color: #888;
+  margin-bottom: 80px;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_content p {
+  color: #888;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_svg {
+  width: 50%;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_svg svg {
+  width: 100%;
+  height: 100%;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_svg svg .path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+.introduction .introduction_hello .introduction_hello_container .introduction_hello_svg svg .path1 {
+  stroke-dasharray: 6884;
+  animation: drawPath1 2s linear, floating 2.2s linear infinite;
+}
+@keyframes drawPath1 {
+  0% {
+    stroke-dashoffset: 6884;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes floating {
+  50% {
+    transform: translate3d(0, 40px, 0);
+  }
+}
+.introduction .introduction_career {
+  font-family: "Nanum Myeongjo", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.introduction .introduction_career h1 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Introduction.css.map */

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 .introduction {
   .introduction_main {
     position: relative;
@@ -66,6 +67,106 @@
               font-weight: 700 !important;
             }
           }
+        }
+      }
+    }
+  }
+  @mixin intro_base {
+    font-family: "Nanum Myeongjo", serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .introduction_hello {
+    @include intro_base;
+    margin-bottom: 80px;
+
+    h1 {
+      margin-bottom: 70px;
+      font-size: 40px;
+      text-align: center;
+    }
+    .introduction_hello_container {
+      display: flex;
+      justify-content: center;
+      .introduction_hello_content {
+        width: 50%;
+        h3 {
+          line-height: 40px;
+          color: #888;
+          margin-bottom: 80px;
+        }
+        p {
+          color: #888;
+        }
+      }
+      .introduction_hello_svg {
+        width: 50%;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          .path {
+            fill: none;
+            stroke: #000;
+            stroke-width: 3px;
+          }
+          .path1 {
+            stroke-dasharray: 6884;
+            animation: drawPath1 2s linear, floating 2.2s linear infinite;
+          }
+        }
+      }
+
+      @keyframes drawPath1 {
+        0% {
+          stroke-dashoffset: 6884;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes floating {
+        50% {
+          transform: translate3d(0, 40px, 0);
+        }
+      }
+    }
+  }
+  .introduction_career {
+    @include intro_base;
+    h1 {
+      margin-bottom: 70px;
+      font-size: 40px;
+      text-align: center;
+    }
+    .introduction_career_container {
+      .introduction_career_year {
+      }
+      .introduction_career_contents {
+        .introduction_career_year_content {
+          ul {
+            li {
+              .date {
+                .dot {
+                }
+                .date_txt {
+                  p {
+                  }
+                }
+              }
+              .content_txt {
+              }
+            }
+          }
+        }
+        .year_2022 {
+        }
+        .year_2021 {
+        }
+        .year_2020 {
         }
       }
     }
