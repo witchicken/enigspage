@@ -73,8 +73,8 @@
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin-bottom: 80px;
 }
 .introduction .introduction_hello h1 {
@@ -131,13 +131,70 @@
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .introduction .introduction_career h1 {
   margin-bottom: 70px;
   font-size: 40px;
   text-align: center;
+}
+.introduction .introduction_career .introduction_career_container {
+  display: flex;
+}
+.introduction .introduction_career .introduction_career_container .year_container {
+  width: 40%;
+}
+.introduction .introduction_career .introduction_career_container .year_container .introduction_career_year {
+  font-size: 90px;
+  color: skyblue;
+  font-weight: 600;
+  transition: all 0.5s;
+  display: flex;
+  overflow: hidden;
+  height: 90px;
+}
+.introduction .introduction_career .introduction_career_container .year_container .introduction_career_year ul {
+  display: inline-block;
+}
+.introduction .introduction_career .introduction_career_container .year_container .introduction_career_year li {
+  list-style: none;
+  display: block;
+  height: 90px;
+  transition: all 1s;
+  transform: translateY(-90px);
+}
+.introduction .introduction_career .introduction_career_container .year_fixed {
+  position: fixed !important;
+  top: 100px !important;
+  font-size: 100px Im !important;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents {
+  width: 55%;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content {
+  margin-bottom: 160px;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content ul li {
+  display: flex;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content ul li .date {
+  display: flex;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content ul li .date .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: skyblue;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content ul li .date .date_txt p {
+  font-size: 21px;
+}
+.introduction .introduction_career .introduction_career_container .introduction_career_contents .introduction_career_year_content ul li .content_txt {
+  margin-left: 20px;
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=Introduction.css.map */
