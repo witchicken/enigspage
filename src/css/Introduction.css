@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 .introduction .introduction_main {
   position: relative;
-  height: 550px;
+  height: 700px;
 }
 .introduction .introduction_main .introduction_img {
   position: absolute;
@@ -156,13 +156,13 @@
 }
 .introduction .introduction_career .introduction_career_container .year_container .introduction_career_year ul {
   display: inline-block;
+  transition: all 0.5s linear;
+  transform: translateY(-180px);
 }
-.introduction .introduction_career .introduction_career_container .year_container .introduction_career_year li {
+.introduction .introduction_career .introduction_career_container .year_container .introduction_career_year ul li {
   list-style: none;
   display: block;
   height: 90px;
-  transition: all 1s;
-  transform: translateY(-90px);
 }
 .introduction .introduction_career .introduction_career_container .year_fixed {
   position: fixed !important;

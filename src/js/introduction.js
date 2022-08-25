@@ -32,11 +32,15 @@ switch (receive_cr) {
 }
 const year_2021 = document.querySelector(".year_2021");
 const year_2020 = document.querySelector(".year_2020");
+const year_2019 = document.querySelector(".year_2019");
 
 const header = document.querySelector(".header");
 const year_txt = document.querySelector(".introduction_career_year");
 const introduction_career_container = document.querySelector(
   ".introduction_career_container"
+);
+const introduction_career_year_lists = document.querySelector(
+  ".introduction_career_year ul"
 );
 
 window.addEventListener("scroll", () => {
@@ -44,21 +48,27 @@ window.addEventListener("scroll", () => {
     document.documentElement.scrollTop >
     introduction_career_container.offsetTop - header.clientHeight - 50
   ) {
-    year_txt.innerText = 2022;
+    introduction_career_year_lists.style.transform = "translateY(-180px)";
     year_txt.classList.add("year_fixed");
   } else {
     year_txt.classList.remove("year_fixed");
   }
   if (
     document.documentElement.scrollTop >
-    year_2021.offsetTop - header.clientHeight - 70
+    year_2021.offsetTop - header.clientHeight - 140
   ) {
-    year_txt.innerText = 2021;
+    introduction_career_year_lists.style.transform = "translateY(-90px)";
   }
   if (
     document.documentElement.scrollTop >
-    year_2020.offsetTop - header.clientHeight - 100
+    year_2020.offsetTop - header.clientHeight - 140
   ) {
-    year_txt.innerText = 2020;
+    introduction_career_year_lists.style.transform = "translateY(0px)";
+  }
+  if (
+    document.documentElement.scrollTop >
+    year_2019.offsetTop - header.clientHeight - 170
+  ) {
+    introduction_career_year_lists.style.transform = "translateY(-810px)";
   }
 });

@@ -252,6 +252,106 @@
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum nesciunt
                     </div>
                       </li>
+                      </li>
+                    
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>02.04</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum 
+                    </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=\"introduction_career_year_content year_2019\">
+                    <ul>
+                      <li>
+                        <div class=\"date\">
+                          <div class=\"dot\">
+
+                          </div>
+                          <div class=\"date_txt\">
+                          <p>12.25</p>
+                          </div>
+                        </div>
+                        <div class=\"content_txt\">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur 
+                        </div>
+                      </li>
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>11.26</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum nesciunt quidem ratione porro
+                    </div>
+                      </li>
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>09.23</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum 
+                    </div>
+                      </li>
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>05.16</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum nesciunt quidem 
+                    </div>
+                      </li>
+                    
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>03.01</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum nesciunt
+                    </div>
+                      </li>
+                      </li>
+                    
+                      <li>
+                      <div class=\"date\">
+                      <div class=\"dot\">
+
+                      </div>
+                      <div class=\"date_txt\">
+                      <p>02.04</p>
+                      </div>
+                    </div>
+                    <div class=\"content_txt\">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas reiciendis suscipit hic esse pariatur ipsum 
+                    </div>
+                      </li>
                     </ul>
                   </div>
                 </div>

@@ -3,7 +3,7 @@
 .introduction {
   .introduction_main {
     position: relative;
-    height: 550px;
+    height: 700px;
     .introduction_img {
       position: absolute;
       left: 0;
@@ -157,13 +157,13 @@
           height: 90px;
           ul {
             display: inline-block;
-          }
-          li {
-            list-style: none;
-            display: block;
-            height: 90px;
-            transition: all 1s;
-            transform: translateY(-90px);
+            transition: all 0.5s linear;
+            transform: translateY(-180px);
+            li {
+              list-style: none;
+              display: block;
+              height: 90px;
+            }
           }
         }
       }
