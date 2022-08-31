@@ -196,5 +196,66 @@
   margin-left: 20px;
   margin-bottom: 35px;
 }
+.introduction .introduction_news {
+  font-family: "Nanum Myeongjo", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 80px;
+}
+.introduction .introduction_news .introduction_news_title {
+  margin-bottom: 70px;
+  font-size: 40px;
+  text-align: center;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list {
+  display: flex;
+  flex-direction: column;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list .news_board_content {
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 50px;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list .news_board_content .news_board_content_img {
+  width: 300px;
+  height: 250px;
+  background-color: violet;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list .news_board_content .news_board_content_des {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list .news_board_content .news_board_content_des h1 {
+  font-size: 22px;
+}
+.introduction .introduction_news .news_board_container .news_board_content_list .news_board_content .news_board_content_des p {
+  font-size: 13px;
+  color: #888;
+}
+.introduction .introduction_location {
+  font-family: "Nanum Myeongjo", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 80px;
+}
+.introduction .introduction_location h1 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  text-align: center;
+}
+.introduction .introduction_location .introduction_location_kakao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=Introduction.css.map */

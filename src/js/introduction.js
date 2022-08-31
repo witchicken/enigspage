@@ -39,16 +39,17 @@ const year_txt = document.querySelector(".introduction_career_year");
 const introduction_career_container = document.querySelector(
   ".introduction_career_container"
 );
-const introduction_career_year_lists = document.querySelector(
-  ".introduction_career_year ul"
-);
-
+const introduction_career_year_lists_first =
+  document.querySelector(".intro_year_first");
+const introduction_career_year_lists_second =
+  document.querySelector(".intro_year_second");
+console.log("test111234");
 window.addEventListener("scroll", () => {
   if (
     document.documentElement.scrollTop >
     introduction_career_container.offsetTop - header.clientHeight - 50
   ) {
-    introduction_career_year_lists.style.transform = "translateY(-180px)";
+    introduction_career_year_lists_first.style.transform = "translateY(-180px)";
     year_txt.classList.add("year_fixed");
   } else {
     year_txt.classList.remove("year_fixed");
@@ -57,18 +58,21 @@ window.addEventListener("scroll", () => {
     document.documentElement.scrollTop >
     year_2021.offsetTop - header.clientHeight - 140
   ) {
-    introduction_career_year_lists.style.transform = "translateY(-90px)";
+    introduction_career_year_lists_first.style.transform = "translateY(-90px)";
   }
   if (
     document.documentElement.scrollTop >
     year_2020.offsetTop - header.clientHeight - 140
   ) {
-    introduction_career_year_lists.style.transform = "translateY(0px)";
+    introduction_career_year_lists_first.style.transform = "translateY(0px)";
+    introduction_career_year_lists_second.style.transform =
+      "translateY(-180px)";
   }
   if (
     document.documentElement.scrollTop >
     year_2019.offsetTop - header.clientHeight - 170
   ) {
-    introduction_career_year_lists.style.transform = "translateY(-810px)";
+    introduction_career_year_lists_first.style.transform = "translateY(-810px)";
+    introduction_career_year_lists_second.style.transform = "translateY(-90px)";
   }
 });

@@ -137,6 +137,9 @@
           
         </ul>
       </div>
+      <?php 
+        
+      ?>
       <?php include_once 'footer.inc' ?>
     </div>
     

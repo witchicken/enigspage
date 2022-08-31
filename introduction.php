@@ -63,8 +63,20 @@
               <div class=\"introduction_career_container\">
                 <div class=\"year_container\">
                   <div class=\"introduction_career_year\">
-                  <span>202</span>
-                  <ul>
+                  <span>20</span>
+                  <ul class=\"intro_year_second\">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                  </ul>
+                  <ul class=\"intro_year_first\">
                     <li>0</li>
                     <li>1</li>
                     <li>2</li>
@@ -359,10 +371,58 @@
             </section>";
             break;
           case 'news':
-            echo "news";
+            echo "<section class=\"introduction_news\">
+              <h1 class=\"introduction_news_title\">소식<h1>
+              <div class=\"news_board_container\">
+                <div class=\"news_board_content_list\">
+                  <div class=\"news_board_content\">
+                    <div class=\"news_board_content_img\">img</div>
+                    <div class=\"news_board_content_des\">
+                      <h1>title</h1>
+                      <p>description</p>
+                      <div>
+                        <span>updatedat</span>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                  <div class=\"news_board_content\">
+                    <div class=\"news_board_content_img\">img</div>
+                    <div class=\"news_board_content_des\">
+                      <h1>title</h1>
+                      <p>description</p>
+ 
+                        <span>updatedat</span>
+                   
+                    </div>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            ";
             break;
           case 'location':
-            echo "location";
+            echo "<section class=\"introduction_location\">
+            <script type=\"text/javascript\" src=\"//dapi.kakao.com/v2/maps/sdk.js?appkey=da3934c49567ea7c57f05bfc43253582\"></script>  
+            <h1 class=\"introduction_location_title\">location</h1>
+            <div class=\"introduction_location_kakao\">
+              <div id=\"map\" style=\"width:800px;height:600px;\"></div>
+            </div>
+            
+            <script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+            </section>";
             break;
           default:
             # code...
