@@ -25,14 +25,13 @@
           <ul>
             <li>
               <a href="introduction.php">
-                <p>자기소개</p>
+                <p>소개</p>
               </a>
               <div class="header_nav_detail">
                 <div><a href="introduction.php#move_hello">인사말</a></div>
-                <div>lorem</div>
-                <div>itsum</div>
-                <div>lorem</div>
+                <div><a href="introduction.php?cr=career#move_career">경력</a></div><div><a href="introduction.php?cr=news#move_news">소식</a></div><div><a href="introduction.php?cr=location#move_location">위치</a></div>
               </div>
+              
             </li>
             <li>
             <a href="#">
@@ -68,6 +67,15 @@
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="header_nav_mobile">
+        <a class="hamburger ham_active">
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+        </a>
+                
       </div>
     </div>
     <div class="btn_toTop">

@@ -58,7 +58,7 @@
           </section>";
             break;
           case 'career':
-            echo "<section class=\"introduction_career\">
+            echo "<section class=\"introduction_career\" id=\"move_career\">
               <h1>career</h1>
               <div class=\"introduction_career_container\">
                 <div class=\"year_container\">
@@ -371,7 +371,7 @@
             </section>";
             break;
           case 'news':
-            echo "<section class=\"introduction_news\">
+            echo "<section class=\"introduction_news\" id=\"move_news\">
               <h1 class=\"introduction_news_title\">소식<h1>
               <div class=\"news_board_container\">
                 <div class=\"news_board_content_list\">
@@ -406,7 +406,7 @@
             ";
             break;
           case 'location':
-            echo "<section class=\"introduction_location\">
+            echo "<section class=\"introduction_location\" id=\"move_location\">
             <script type=\"text/javascript\" src=\"//dapi.kakao.com/v2/maps/sdk.js?appkey=da3934c49567ea7c57f05bfc43253582\"></script>  
             <h1 class=\"introduction_location_title\">location</h1>
             <div class=\"introduction_location_kakao\">

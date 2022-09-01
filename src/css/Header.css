@@ -1,8 +1,24 @@
+@media all and (max-width: 1100px) and (min-width: 800px) {
+  .header_company_logo {
+    transform: translate(-10px, -10px);
+  }
+  .header_company_name {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .header_nav_mobile {
+    display: block !important;
+  }
+  .header_nav {
+    display: none;
+  }
+}
 .header {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  height: 100px;
+  height: 120px;
   transition: all 0.4s;
   top: 0;
   z-index: 9999;
@@ -84,9 +100,13 @@
 }
 .header .header_container .header_nav nav ul li .header_nav_detail div {
   color: #888;
-  transition: all 0.5s;
 }
-.header .header_container .header_nav nav ul li .header_nav_detail div:hover {
+.header .header_container .header_nav nav ul li .header_nav_detail div a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #888;
+}
+.header .header_container .header_nav nav ul li .header_nav_detail div a:hover {
   color: purple;
 }
 .header .header_container .header_nav nav ul li p {
@@ -95,6 +115,53 @@
 .header .header_container .header_nav nav ul li p:hover {
   transform-origin: top left;
   transform: rotateX(360deg) scale(1.2);
+}
+.header .header_container .header_nav_mobile {
+  display: none;
+  width: 44px;
+  height: 33px;
+  position: relative;
+  margin-top: 5px;
+}
+.header .header_container .header_nav_mobile .hamburger {
+  position: absolute;
+  width: 44px;
+  height: 33px;
+  cursor: pointer;
+}
+.header .header_container .header_nav_mobile .hamburger b {
+  position: absolute;
+  left: 0;
+  width: 44px;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.5s;
+}
+.header .header_container .header_nav_mobile .hamburger b:nth-child(1) {
+  top: 0;
+  opacity: 1;
+}
+.header .header_container .header_nav_mobile .hamburger b:nth-child(2) {
+  top: 50%;
+}
+.header .header_container .header_nav_mobile .hamburger b:nth-child(3) {
+  top: 100%;
+}
+.header .header_container .header_nav_mobile .hamburger b:nth-child(4) {
+  opacity: 1;
+  top: 50%;
+}
+.header .header_container .header_nav_mobile .ham_active b:nth-child(1) {
+  opacity: 0;
+}
+.header .header_container .header_nav_mobile .ham_active b:nth-child(2) {
+  transform: rotate(135deg);
+}
+.header .header_container .header_nav_mobile .ham_active b:nth-child(3) {
+  opacity: 0;
+}
+.header .header_container .header_nav_mobile .ham_active b:nth-child(4) {
+  transform: rotate(-135deg);
 }
 .header .btn_toTop {
   position: fixed;

@@ -1,8 +1,26 @@
+@media all and (max-width: 1100px) and (min-width: 800px) {
+  .header_company_logo {
+    transform: translate(-10px, -10px);
+  }
+
+  .header_company_name {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .header_nav_mobile {
+    display: block !important;
+  }
+  .header_nav {
+    display: none;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  height: 100px;
+  height: 120px;
   transition: all 0.4s;
   top: 0;
   z-index: 9999;
@@ -70,6 +88,7 @@
             font-family: noto-sans-cjk-kr, sans-serif;
             font-weight: 700;
             font-style: normal;
+
             a {
               p {
                 color: white;
@@ -83,9 +102,15 @@
               }
               div {
                 color: #888;
-                transition: all 0.5s;
-                &:hover {
-                  color: purple;
+
+                a {
+                  text-decoration: none;
+                  transition: all 0.5s;
+
+                  color: #888;
+                  &:hover {
+                    color: purple;
+                  }
                 }
               }
             }
@@ -96,6 +121,58 @@
                 transform: rotateX(360deg) scale(1.2);
               }
             }
+          }
+        }
+      }
+    }
+    .header_nav_mobile {
+      display: none;
+      width: 44px;
+      height: 33px;
+      position: relative;
+      margin-top: 5px;
+      .hamburger {
+        position: absolute;
+        width: 44px;
+        height: 33px;
+        cursor: pointer;
+
+        b {
+          position: absolute;
+          left: 0;
+          width: 44px;
+          height: 5px;
+          background-color: #888;
+          transition: all 0.5s;
+          &:nth-child(1) {
+            top: 0;
+            opacity: 1;
+          }
+          &:nth-child(2) {
+            top: 50%;
+          }
+          &:nth-child(3) {
+            top: 100%;
+          }
+          &:nth-child(4) {
+            opacity: 1;
+            top: 50%;
+          }
+        }
+      }
+      .ham_active {
+        b {
+          &:nth-child(1) {
+            opacity: 0;
+          }
+          &:nth-child(2) {
+            transform: rotate(135deg);
+          }
+          &:nth-child(3) {
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-135deg);
           }
         }
       }

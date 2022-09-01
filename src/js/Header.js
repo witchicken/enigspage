@@ -1,12 +1,13 @@
 window.onscroll = function () {
   scrollFunction();
 };
+
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document
       .querySelectorAll(".header_nav ul li a p")
       .forEach((item) => (item.style.color = "black"));
-    document.querySelector(".header").style.height = "100px";
+    document.querySelector(".header").style.height = "120px";
     document.querySelector(".header").style.backgroundColor = "white";
 
     document
@@ -39,3 +40,13 @@ function scrollFunction() {
 document.querySelector(".btn_toTop").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+//hamburger
+const hamburger = document.querySelector(".hamburger");
+
+console.log("headertest");
+function hamclick() {
+  console.log(this);
+}
+
+hamburger.addEventListener("click", hamclick);
