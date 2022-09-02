@@ -7,7 +7,7 @@ function scrollFunction() {
     document
       .querySelectorAll(".header_nav ul li a p")
       .forEach((item) => (item.style.color = "black"));
-    document.querySelector(".header").style.height = "120px";
+    document.querySelector(".header").style.height = "100px";
     document.querySelector(".header").style.backgroundColor = "white";
 
     document
@@ -28,9 +28,9 @@ function scrollFunction() {
 
     document
       .querySelectorAll(".header_back a")
-      .forEach((item) => (item.style.color = "white"));
+      .forEach((item) => (item.style.color = "#999"));
     document.querySelector(".header_company_name span:last-child").style.color =
-      "white";
+      "#999";
     document.querySelector(".btn_toTop").classList.remove("if_scroll");
     if (document.querySelector(".Home_movebtn")) {
       document.querySelector(".Home_movebtn").style.opacity = 0;
@@ -44,9 +44,14 @@ document.querySelector(".btn_toTop").addEventListener("click", () => {
 //hamburger
 const hamburger = document.querySelector(".hamburger");
 
-console.log("headertest");
 function hamclick() {
-  console.log(this);
+  this.classList.toggle("ham_active");
+  console.log("ham11");
+  if (this.classList[1]) {
+    document.querySelector(".header").classList.add("ham_click");
+  } else {
+    document.querySelector(".header").classList.remove("ham_click");
+  }
 }
 
 hamburger.addEventListener("click", hamclick);

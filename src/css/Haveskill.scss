@@ -1,0 +1,54 @@
+@mixin intro_base {
+  font-family: "Nanum Myeongjo", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.haveskill {
+  height: auto;
+  .haveskill_container {
+    position: relative;
+    height: 650px;
+    .haveskill_background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      filter: brightness(0.8);
+      background: center / cover no-repeat url("../img/dogskill.jpg");
+      p {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: white;
+        letter-spacing: 8px;
+      }
+    }
+  }
+  @mixin h1box {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  .haveskill_front {
+    margin-top: 50px;
+    h1 {
+      @include h1box();
+    }
+  }
+  .haveskill_back {
+    margin-top: 50px;
+    h1 {
+      @include h1box();
+    }
+  }
+}

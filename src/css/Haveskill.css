@@ -1,0 +1,48 @@
+.haveskill {
+  height: auto;
+}
+.haveskill .haveskill_container {
+  position: relative;
+  height: 650px;
+}
+.haveskill .haveskill_container .haveskill_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(0.8);
+  background: center/cover no-repeat url("../img/dogskill.jpg");
+}
+.haveskill .haveskill_container .haveskill_background p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 8px;
+}
+.haveskill .haveskill_front {
+  margin-top: 50px;
+}
+.haveskill .haveskill_front h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.haveskill .haveskill_back {
+  margin-top: 50px;
+}
+.haveskill .haveskill_back h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=Haveskill.css.map */

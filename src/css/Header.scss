@@ -1,9 +1,30 @@
+@media all and (min-width: 1100px) {
+  .header {
+    &:hover {
+      height: 280px !important;
+      overflow: visible;
+    }
+  }
+  .header_nav_mobile_list {
+    display: none;
+  }
+}
+
 @media all and (max-width: 1100px) and (min-width: 800px) {
   .header_company_logo {
     transform: translate(-10px, -10px);
   }
 
   .header_company_name {
+    display: none;
+  }
+  .header {
+    &:hover {
+      height: 280px !important;
+      overflow: visible;
+    }
+  }
+  .header_nav_mobile_list {
     display: none;
   }
 }
@@ -14,21 +35,42 @@
   .header_nav {
     display: none;
   }
+  .ham_click {
+    height: 280px !important;
+    background-color: white !important;
+  }
+  .header_nav_mobile_list {
+    position: absolute;
+    top: 120px;
+    color: black;
+    overflow: hidden;
+    li {
+      margin-top: 15px;
+      font-size: 18px;
+      a {
+        p {
+          color: black;
+          &:hover {
+            color: violet;
+          }
+        }
+      }
+    }
+  }
 }
 
 .header {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  height: 120px;
+  height: 100px;
   transition: all 0.4s;
   top: 0;
   z-index: 9999;
   background-color: transparent;
   &:hover {
-    height: 280px !important;
     background-color: white;
-    overflow: visible;
+
     .header_back a {
       color: black !important;
     }

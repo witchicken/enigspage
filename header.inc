@@ -34,8 +34,8 @@
               
             </li>
             <li>
-            <a href="#">
-                <p>보유스킬</p>
+            <a href="haveskill.php">
+              <p>스킬</p>
             </a>
             <div class="header_nav_detail">
                 <div>front</div>
@@ -43,9 +43,9 @@
               </div>
             </li>
             <li>
-            <a href="#">
-                <p>포트폴리오</p>
-            </a>
+              <a href="portfolio.php">
+                  <p>포트폴리오</p>
+              </a>
             <div class="header_nav_detail">
                 <div>1</div>
                 <div>2</div>
@@ -54,13 +54,13 @@
               </div>
             </li>
             <li>
-            <a href="#">
+            <a href="haveskill.php">
                 <p>contact</p>
             </a>
             
             </li>
             <li>
-            <a href="#">
+            <a href="search.php">
                 <p>search</p>
             </a>
             
@@ -69,13 +69,37 @@
         </nav>
       </div>
       <div class="header_nav_mobile">
-        <a class="hamburger ham_active">
+        <a class="hamburger">
           <b></b>
           <b></b>
           <b></b>
           <b></b>
         </a>
-                
+      </div>
+      <div class="header_nav_mobile_list">
+        <ul>
+          <li>
+            <a href="introduction.php">
+                <p>소개</p>
+            </a>
+          </li>
+          <li>
+            <a href="haveskill.php">
+              <p>스킬</p>
+            </a>
+          </li>
+          <li>
+            <a href="portfolio.php">
+              <p>포트폴리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="contact.php">
+              <p>contact</p>
+            </a>
+          </li>
+          
+        </ul>
       </div>
     </div>
     <div class="btn_toTop">
