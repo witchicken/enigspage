@@ -20,9 +20,39 @@
     </div>
     <div class="haveskill_front">
       <h1>FrontSkill</h1>
+        <div class="haveskill_front_lists">
+          <div class="menu" onclick="this.classList.toggle('open')">
+          <div class="button"><span>html5</span></div>
+          <div class="button"><span>css</span></div>
+          <div class="button"><span>javascript</span></div>
+          <div class="button"><span>react</span></div>
+          <div class="button"><span>nextjs</span></div>
+        </div>
+      </div>
     </div>
+    <!--php,jsp/servlet,nodejs,express,api,typescript!-->
     <div class="haveskill_back">
       <h1>BackSkill</h1>
+      <div class="haveskill_back_lists">
+        <div class="menu" onclick="this.classList.toggle('open')">
+        <div class="button"><span>php</span></div>
+        <div class="button"><span>jsp/servlet</span></div>
+        <div class="button"><span>nodejs</span></div>
+        <div class="button"><span>expressjs</span></div>
+        <div class="button"><span>api</span></div>
+        <div class="button"><span>typescript</span></div>
+      </div>
+    </div>
+    <div class="haveskill_db">
+      <h1>DB</h1>
+      <div class="haveskill_db_lists">
+        <div class="haveskill_back_lists">
+          <div class="menu" onclick="this.classList.toggle('open')">
+            <div class="button"><span>mysql</span></div>
+            <div class="button"><span>mongodb</span></div>
+            
+        </div>
+      </div>
     </div>
   </section>
   <?php include_once 'footer.inc' ?>

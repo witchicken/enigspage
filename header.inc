@@ -14,8 +14,11 @@
     </div>
     <div class="header_container">
       <div class="header_company">
-        <div class="header_company_logo">
-        </div>
+        <a href="/">
+          <div class="header_company_logo">
+          </div>
+        </a>
+        
         <a class="header_company_name" href="/">
             <span>enig's </span> <span>Page</span>
           </a>
