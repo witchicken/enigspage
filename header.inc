@@ -41,8 +41,11 @@
               <p>스킬</p>
             </a>
             <div class="header_nav_detail">
-                <div>front</div>
-                <div>back</div>
+                <div>
+                  <a href="haveskill.php#move_front">front</a>
+                </div>
+                <div><a href="haveskill.php#move_back">back</a></div>
+                <div><a href="haveskill.php#move_db">db</a></div>
               </div>
             </li>
             <li>
@@ -57,7 +60,7 @@
               </div>
             </li>
             <li>
-            <a href="haveskill.php">
+            <a href="contact.php">
                 <p>contact</p>
             </a>
             

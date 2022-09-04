@@ -18,7 +18,7 @@
         <p>Skill</p>
       </div>
     </div>
-    <div class="haveskill_front">
+    <div class="haveskill_front" id="move_front">
       <h1>FrontSkill</h1>
         <div class="haveskill_front_lists">
           <div class="menu" onclick="this.classList.toggle('open')">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <!--php,jsp/servlet,nodejs,express,api,typescript!-->
-    <div class="haveskill_back">
+    <div class="haveskill_back" id="move_back">
       <h1>BackSkill</h1>
       <div class="haveskill_back_lists">
         <div class="menu" onclick="this.classList.toggle('open')">
@@ -43,15 +43,15 @@
         <div class="button"><span>typescript</span></div>
       </div>
     </div>
-    <div class="haveskill_db">
+    <div class="haveskill_db" id="move_db">
       <h1>DB</h1>
       <div class="haveskill_db_lists">
-        <div class="haveskill_back_lists">
+        
           <div class="menu" onclick="this.classList.toggle('open')">
             <div class="button"><span>mysql</span></div>
             <div class="button"><span>mongodb</span></div>
             
-        </div>
+        
       </div>
     </div>
   </section>

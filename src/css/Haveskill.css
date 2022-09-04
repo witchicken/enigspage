@@ -28,7 +28,7 @@
   letter-spacing: 8px;
 }
 .haveskill .haveskill_front {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .haveskill .haveskill_front h1 {
   width: 100%;
@@ -37,8 +37,8 @@
   letter-spacing: 2px;
 }
 .haveskill .haveskill_front .haveskill_front_lists {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   place-content: center;
   width: 100%;
   display: flex;
@@ -137,7 +137,7 @@
   transform: scale(1.1);
 }
 .haveskill .haveskill_back {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .haveskill .haveskill_back h1 {
   width: 100%;
@@ -146,8 +146,8 @@
   letter-spacing: 2px;
 }
 .haveskill .haveskill_back .haveskill_back_lists {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   place-content: center;
   width: 100%;
   display: flex;
@@ -205,34 +205,34 @@
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:first-of-type {
   bottom: 40px;
   right: 70px;
-  background: url("../img/html.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/php.png") no-repeat 50%/50% #e8e8f3;
 }
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:nth-of-type(2) {
   bottom: 80px;
-  background: url("../img/css.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/jsp.png") no-repeat 50%/50% #e8e8f3;
   transition-delay: 0.05s;
 }
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:nth-of-type(3) {
   bottom: 40px;
   right: -70px;
-  background: url("../img/javascript.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/nodejs.png") no-repeat 50%/50% #e8e8f3;
   transition-delay: 0.1s;
 }
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:nth-of-type(4) {
   bottom: -40px;
   right: -70px;
-  background: url("../img/react.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/express.png") no-repeat 50%/50% #e8e8f3;
   transition-delay: 0.15s;
 }
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:nth-of-type(5) {
   bottom: -80px;
-  background: url("../img/react.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/api.png") no-repeat 50%/50% #e8e8f3;
   transition-delay: 0.2s;
 }
 .haveskill .haveskill_back .haveskill_back_lists .menu.open .button:last-of-type {
   bottom: -40px;
   right: 70px;
-  background: url("../img/nextjs.png") no-repeat 50% 45%/50% 45% #e8e8f3;
+  background: url("../img/typescript.png") no-repeat 50% 45%/50% 45% #e8e8f3;
   transition-delay: 0.25s;
 }
 .haveskill .haveskill_back .haveskill_back_lists .button {
@@ -252,7 +252,7 @@
   transform: scale(1.1);
 }
 .haveskill .haveskill_db {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .haveskill .haveskill_db h1 {
   width: 100%;
@@ -261,8 +261,8 @@
   letter-spacing: 2px;
 }
 .haveskill .haveskill_db .haveskill_db_lists {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   place-content: center;
   width: 100%;
   display: flex;
@@ -320,12 +320,12 @@
 .haveskill .haveskill_db .haveskill_db_lists .menu.open .button:first-of-type {
   bottom: 40px;
   right: 70px;
-  background: url("../img/html.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/mysql.png") no-repeat 50%/50% #e8e8f3;
 }
 .haveskill .haveskill_db .haveskill_db_lists .menu.open .button:nth-of-type(2) {
   bottom: 80px;
   right: 0px;
-  background: url("../img/css.png") no-repeat 50%/50% #e8e8f3;
+  background: url("../img/mongodb.png") no-repeat 50%/50% #e8e8f3;
   transition-delay: 0.05s;
 }
 .haveskill .haveskill_db .haveskill_db_lists .button {

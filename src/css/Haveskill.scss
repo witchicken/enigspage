@@ -1,3 +1,6 @@
+//google fonts
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
 @mixin intro_base {
   font-family: "Nanum Myeongjo", serif;
   max-width: 1400px;
@@ -7,6 +10,7 @@
   padding-right: 60px;
 }
 .haveskill {
+  font-family: "Nanum Myeongjo", serif;
   background: #e8e8f3;
   height: auto;
   .haveskill_container {
@@ -41,13 +45,13 @@
     letter-spacing: 2px;
   }
   .haveskill_front {
-    margin-top: 50px;
+    padding-top: 100px;
     h1 {
       @include h1box();
     }
     .haveskill_front_lists {
-      margin-top: 80px;
-      margin-bottom: 160px;
+      padding-top: 80px;
+      padding-bottom: 160px;
       place-content: center;
       width: 100%;
       display: flex;
@@ -157,13 +161,13 @@
     }
   }
   .haveskill_back {
-    margin-top: 50px;
+    padding-top: 100px;
     h1 {
       @include h1box();
     }
     .haveskill_back_lists {
-      margin-top: 80px;
-      margin-bottom: 160px;
+      padding-top: 80px;
+      padding-bottom: 160px;
       place-content: center;
       width: 100%;
       display: flex;
@@ -224,35 +228,35 @@
             &:first-of-type {
               bottom: 40px;
               right: 70px;
-              background: url("../img/html.png") no-repeat 50%/50% #e8e8f3;
+              background: url("../img/php.png") no-repeat 50%/50% #e8e8f3;
             }
             &:nth-of-type(2) {
               bottom: 80px;
-              background: url("../img/css.png") no-repeat 50%/ 50% #e8e8f3;
+              background: url("../img/jsp.png") no-repeat 50%/ 50% #e8e8f3;
               transition-delay: 0.05s;
             }
             &:nth-of-type(3) {
               bottom: 40px;
               right: -70px;
 
-              background: url("../img/javascript.png") no-repeat 50%/ 50% #e8e8f3;
+              background: url("../img/nodejs.png") no-repeat 50%/ 50% #e8e8f3;
               transition-delay: 0.1s;
             }
             &:nth-of-type(4) {
               bottom: -40px;
               right: -70px;
-              background: url("../img/react.png") no-repeat 50%/ 50% #e8e8f3;
+              background: url("../img/express.png") no-repeat 50%/ 50% #e8e8f3;
               transition-delay: 0.15s;
             }
             &:nth-of-type(5) {
               bottom: -80px;
-              background: url("../img/react.png") no-repeat 50%/ 50% #e8e8f3;
+              background: url("../img/api.png") no-repeat 50%/ 50% #e8e8f3;
               transition-delay: 0.2s;
             }
             &:last-of-type {
               bottom: -40px;
               right: 70px;
-              background: url("../img/nextjs.png") no-repeat 50% 45%/50% 45%
+              background: url("../img/typescript.png") no-repeat 50% 45%/50% 45%
                 #e8e8f3;
               transition-delay: 0.25s;
             }
@@ -279,13 +283,13 @@
     }
   }
   .haveskill_db {
-    margin-top: 50px;
+    padding-top: 100px;
     h1 {
       @include h1box();
     }
     .haveskill_db_lists {
-      margin-top: 80px;
-      margin-bottom: 160px;
+      padding-top: 80px;
+      padding-bottom: 160px;
       place-content: center;
       width: 100%;
       display: flex;
@@ -346,12 +350,12 @@
             &:first-of-type {
               bottom: 40px;
               right: 70px;
-              background: url("../img/html.png") no-repeat 50%/50% #e8e8f3;
+              background: url("../img/mysql.png") no-repeat 50%/50% #e8e8f3;
             }
             &:nth-of-type(2) {
               bottom: 80px;
               right: 0px;
-              background: url("../img/css.png") no-repeat 50%/ 50% #e8e8f3;
+              background: url("../img/mongodb.png") no-repeat 50%/ 50% #e8e8f3;
               transition-delay: 0.05s;
             }
           }
