@@ -1,3 +1,4 @@
+<?php session_start(); ?>
   <header class="header">
     <div class="header_back">
       <?php 
@@ -7,7 +8,7 @@
       }else{
         $user_email = $_SESSION['user_email'];
         $user_nickname = $_SESSION['user_nickname'];
-        echo "<p><strong>$user_nickname</strong>님 환영합니다.";
+        echo "<p style=\"color:#888\"><strong>$user_nickname</strong>님 환영합니다.";
         echo "<a href=\"logout.php\">[로그아웃]</a></p>";
       }
     ?>
@@ -53,10 +54,7 @@
                   <p>포트폴리오</p>
               </a>
             <div class="header_nav_detail">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                
               </div>
             </li>
             <li>
@@ -66,8 +64,8 @@
             
             </li>
             <li>
-            <a href="search.php">
-                <p>search</p>
+            <a href="board.php">
+                <p>board</p>
             </a>
             
             </li>

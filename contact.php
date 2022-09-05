@@ -18,7 +18,7 @@
   <?php include_once 'header.inc' ?>
   <section class="contact">
     <div class="contact_container">
-      <form class="contact_inner">
+      <form class="contact_inner" method="post" action=<?php echo htmlspecialchars('contact_ok.php');?>>
         <h1>Contact us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste vero recusandae!</p>
         <div class="contact_common">
@@ -37,12 +37,14 @@
           
           <textarea class="form_msg_input_cl" placeholder="type message" name="form_msg_input" id="form_msg_input" maxlength="500"></textarea>
         </div>
-        <input type="submit" value="SEND"/>
+        <input type="submit" class="contact_submit" value="SEND" />
       </form>
 
     </div>
   </section>
   <?php include_once 'footer.inc' ?>
   <script src="./src/js/Header.js" ></script>
+
+  
 </body>
 </html>
