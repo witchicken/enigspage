@@ -45,5 +45,8 @@
   padding-right: 60px;
   padding-bottom: 100px;
 }
+.board .board_content .board_list {
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=Board.css.map */

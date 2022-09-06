@@ -33,6 +33,27 @@
                 <th width="100">조회수</th>
             </tr>
         </thead>
+        <?php
+          include("./connectMysql.php");
+          $conn = new mysqli($servername,$username,$password,"enigspage");
+          mysqli_report(MYSQLI_REPORT_ALL);
+          $sql = "SELECT * FROM BOARD order by id desc limit 0,10";
+          $board = $conn -> query($sql) -> fetch_array();
+          echo $board;
+          $conn -> close();
+          
+        ?>
+        <tbody>
+          <tr>
+          <td width="70"><?php echo $board['id']; ?></td>
+          <td width="500"><a href=""><?php echo $title;?></a></td>
+          <td width="120"><?php echo $board['email']?></td>
+          <td width="100"><?php echo $board['date']?></td>
+          <td width="100"><?php echo $board['hit']; ?></td>
+          <td width="100"><?php echo $board['thumbup']?></td>
+          </tr>
+        </tbody>
+        
         </table>
     </div>
   </section>

@@ -45,5 +45,8 @@
   }
   .board_content {
     @include intro_base();
+    .board_list {
+      margin: 0 auto;
+    }
   }
 }
