@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@
     </div>
     <div class="board_content">
         <table class="board_list">
-        <thead>
+        <thead class="board_head">
           <tr>
               <th width="70">번호</th>
                 <th width="500">제목</th>
@@ -38,24 +39,34 @@
           $conn = new mysqli($servername,$username,$password,"enigspage");
           mysqli_report(MYSQLI_REPORT_ALL);
           $sql = "SELECT * FROM BOARD order by id desc limit 0,10";
-          $board = $conn -> query($sql) -> fetch_array();
-          echo $board;
-          $conn -> close();
-          
+          $result = mysqli_query($conn,$sql);
+          while($board = mysqli_fetch_array($result)){
+            $title=$board["title"]; 
+            if(strlen($title)>30)
+            { 
+              
+              $title=str_replace($board["title"],mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
+            }
         ?>
-        <tbody>
+        <tbody class="board_body" style="margin-bottom:100px">
           <tr>
           <td width="70"><?php echo $board['id']; ?></td>
           <td width="500"><a href=""><?php echo $title;?></a></td>
-          <td width="120"><?php echo $board['email']?></td>
+          <td width="120"><?php echo $board['nickname']?></td>
           <td width="100"><?php echo $board['date']?></td>
           <td width="100"><?php echo $board['hit']; ?></td>
           <td width="100"><?php echo $board['thumbup']?></td>
           </tr>
         </tbody>
-        
+          <?php } $conn -> close(); ?>
         </table>
+        <div class="board_write">
+          <a href="write.php">
+            글쓰기
+          </a>
+        </div>
     </div>
+    
   </section>
   <?php include_once 'footer.inc' ?>
   <script src="./src/js/Header.js" ></script>

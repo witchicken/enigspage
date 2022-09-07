@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +28,7 @@
       $form_msg_input = validate_input($_POST['form_msg_input']);
       include("./connectMysql.php");
       $conn = new mysqli($servername,$username,$password,"enigspage");
-      mysqli_report(MYSQLI_REPORT_ALL);
+      
       $sql = "INSERT INTO CONTACT (name,email,msg) VALUES ('$form_name_input','$form_email_input','$form_msg_input');";
       if($conn->query($sql) === TRUE){
         echo "성공";

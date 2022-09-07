@@ -47,6 +47,14 @@
 }
 .board .board_content .board_list {
   margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 40px;
+}
+.board .board_content .board_list .board_body {
+  text-align: center;
+}
+.board .board_content .board_write a {
+  float: right;
 }
 
 /*# sourceMappingURL=Board.css.map */

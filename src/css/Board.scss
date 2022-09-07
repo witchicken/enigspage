@@ -47,6 +47,18 @@
     @include intro_base();
     .board_list {
       margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 0 40px;
+      .board_head {
+      }
+      .board_body {
+        text-align: center;
+      }
+    }
+    .board_write {
+      a {
+        float: right;
+      }
     }
   }
 }

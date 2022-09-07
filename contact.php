@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,17 +27,17 @@
           <label for="form_name_input">
             <span><i class="fa-solid fa-user"></i></span>
           </label>
-          <input type="text" class="form_name_input_cl" placeholder="Enter your name" name="form_name_input" id="form_name_input"/>
+          <input type="text" class="form_name_input_cl" placeholder="Enter your name" name="form_name_input" id="form_name_input" required/>
         </div>
         <div class="contact_common">
           <label for="form_email_input">
             <span><i class="fa-solid fa-envelope"></i></span>
           </label>
-          <input type="email" class="form_email_input_cl" placeholder="Enter your email" name="form_email_input" id="form_email_input"/>
+          <input type="email" class="form_email_input_cl" placeholder="Enter your email" name="form_email_input" id="form_email_input" required/>
         </div>
         <div class="contact_msg">
           
-          <textarea class="form_msg_input_cl" placeholder="type message" name="form_msg_input" id="form_msg_input" maxlength="500"></textarea>
+          <textarea class="form_msg_input_cl" placeholder="type message" name="form_msg_input" id="form_msg_input" maxlength="500" required></textarea>
         </div>
         <input type="submit" class="contact_submit" value="SEND" />
       </form>
