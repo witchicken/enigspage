@@ -1,10 +1,20 @@
 <?php session_start(); ?>
 
 <?php 
-    if(isset($_SESSION['user_nickname'])&&isset($_SESSION['user_email'])){
+    $id = $_GET['id'];
+    include("./connectMysql.php");
+    $conn = new mysqli($servername,$username,$password,"enigspage");
+    if($conn){ }
+    else{ die(); }
+    $result =  mysqli_fetch_array($conn->query("select * from Board where id = $id"));
+    $db_board_email = $result['email'];
+
+    $conn -> close();
+
+    if($db_board_email === $_SESSION['user_email']){
     }else{
       echo "<script>
-      alert('로그인 해주세요');
+      alert('수정 권한이 없습니다.');
       window.location.href='/';
       </script>";
     }
@@ -20,10 +30,9 @@
   <link rel="stylesheet" href="./src/css/Header.css" type="text/css" />
   <link rel="stylesheet" href="./src/css/Footer.css" type="text/css" />
   <link rel="stylesheet" href="./src/css/Write.css" type="text/css" />
-
 </head>
 <body>
-  <?php include_once 'header.inc' ?>
+<?php include_once 'header.inc' ?>
   
   <section class="write">
     <div class="write_container">
@@ -33,16 +42,20 @@
     </div>
     <div class="write_content">
       <div class="write_content_main">
-        <h1>글쓰기</a></h1>
+        <h1>글 수정</a></h1>
             <div class="write_area">
-                <form action=<?php echo htmlspecialchars('write_ok.php');?> method="post">
+                <form action=<?php echo htmlspecialchars('modify_ok.php');?> method="post">
+                
+                    <input name="id" value="<?php echo $id?>" style="display:none"/>
                     <div class="write_title">
-                        <textarea name="write_title_text"class="write_title_text" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
+                        <textarea name="write_title_text"class="write_title_text" rows="1" cols="55" placeholder="제목" maxlength="100"
+                        
+                        required><?php echo $result['title']?></textarea>
                     </div>
                     <div class="write_content">
-                        <textarea name="write_content_text" class="write_content_text" placeholder="내용" 
+                        <textarea name="write_content_text" class="write_content_text" placeholder="내용"
                         cols="5" rows="10"
-                        required></textarea>
+                        required><?php echo $result['content'];?></textarea>
                     </div>
                     
                     <div class="write_btn_writeok">

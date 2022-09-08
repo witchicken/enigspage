@@ -37,25 +37,26 @@
         <?php
           include("./connectMysql.php");
           $conn = new mysqli($servername,$username,$password,"enigspage");
-          mysqli_report(MYSQLI_REPORT_ALL);
+          
           $sql = "SELECT * FROM BOARD order by id desc limit 0,10";
           $result = mysqli_query($conn,$sql);
           while($board = mysqli_fetch_array($result)){
             $title=$board["title"]; 
             if(strlen($title)>30)
             { 
+              $title = trim($title);
+              $title= substr($board["title"],0,30). "...";
               
-              $title=str_replace($board["title"],mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
             }
         ?>
         <tbody class="board_body" style="margin-bottom:100px">
           <tr>
           <td width="70"><?php echo $board['id']; ?></td>
-          <td width="500"><a href=""><?php echo $title;?></a></td>
+          <td width="500"><a href="/read.php?id=<?php echo $board['id']?>" ><?php echo $title;?></a></td>
           <td width="120"><?php echo $board['nickname']?></td>
           <td width="100"><?php echo $board['date']?></td>
-          <td width="100"><?php echo $board['hit']; ?></td>
-          <td width="100"><?php echo $board['thumbup']?></td>
+          <td width="100"><?php echo $board['thumbup']; ?></td>
+          <td width="100"><?php echo $board['hit']?></td>
           </tr>
         </tbody>
           <?php } $conn -> close(); ?>
