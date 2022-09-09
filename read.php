@@ -47,6 +47,12 @@
         <div class="read_main_des">
           <?php echo $board['content'] ?>
         </div>
+        <div class="read_btn_thumbup">
+          <a href="/thumbup.php?id=<?php echo $_GET['id']?>">
+            <p>[추천]</p>
+          </a>
+          
+        </div>
         <div class="read_main_list">
           <ul>
             <li><a href="/board.php">
@@ -55,7 +61,7 @@
             <li><a href="/modify.php?id=<?php echo $_GET['id']?>">
               수정
             </a></li>
-            <li><a href="">
+            <li><a href="/delete.php?id=<?php echo $_GET['id']?>">
               삭제
             </a></li>
           </ul>

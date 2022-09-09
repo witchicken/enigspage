@@ -1,16 +1,16 @@
 <?php session_start(); ?>
 
 <?php 
+  
     $id = $_GET['id'];
     include("./connectMysql.php");
     $conn = new mysqli($servername,$username,$password,"enigspage");
     if($conn){ }
     else{ die(); }
-    $result =  mysqli_fetch_array($conn->query("select * from Board where id = $id"));
+    $result =  mysqli_fetch_array($conn->query("select email from Board where id = $id"));
     $db_board_email = $result['email'];
 
     $conn -> close();
-
     if($db_board_email === $_SESSION['user_email']){
     }else{
       echo "<script>
@@ -18,6 +18,7 @@
       window.location.href='/';
       </script>";
     }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">

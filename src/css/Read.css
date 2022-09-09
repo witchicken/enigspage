@@ -64,6 +64,10 @@
   padding: 20px;
   line-height: 30px;
 }
+.read .read_content .read_main .read_btn_thumbup {
+  float: right;
+  cursor: pointer;
+}
 .read .read_content .read_main .read_main_list {
   margin-top: 50px;
 }
