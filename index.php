@@ -56,8 +56,8 @@
       <section class="Home_skill" id="move_skill">
         <h1 class="Home_skill_title">skills</h1>
         <h3 class="Home_skill_subtitle">Lorem, ipsum dolor.</h3>
-        <div class="Home_skill_list">
-          <div class="Home_skill_detail">
+        <div class="Home_skill_list ">
+          <div class="Home_skill_detail skill_front">
             <div class="Home_skill_text">
               <h2>Front</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
@@ -66,10 +66,8 @@
             <div class="Home_skill_bottom">
 
             </div>
-
-
           </div>
-          <div class="Home_skill_detail">
+          <div class="Home_skill_detail skill_back">
             <div class="Home_skill_text">
               <h2>Back</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +81,7 @@
 
           </div>
 
-          <div class="Home_skill_detail"
+          <div class="Home_skill_detail skill_db"
           >
             <div class="Home_skill_text"><h2>DB</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A repellat libero dolor.</p>

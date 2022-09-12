@@ -1,9 +1,20 @@
 <?php session_start(); ?>
 
 <!DOCTYPE HTML>  
-<html>
+<html lang = "en">
 <head>
-<style>
+
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="./src/css/Header.css" type="text/css" />
+    <link rel="stylesheet" href="./src/css/Footer.css" type="text/css" />
+    <link rel="stylesheet" href="./src/css/Signup.css" type="text/css" />
+    <!--fontawesome!-->
+    <script src="https://kit.fontawesome.com/b4823e771e.js" crossorigin="anonymous"></script>
+    <style>
 .error {color: red;}
 </style>
 <script>
@@ -38,10 +49,13 @@
 </script>
 </head>
 <body>  
-
+<?php include_once 'header.inc' ?>
+<section class="signup">
 <h2>회원가입</h2>
 <p><span class="error">* 필수 체크사항</span></p>
+<div class="signup_container">
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  <div class="signup_innerbox">
   이메일: <input type="email" name="email" maxlength=25 id="chk_id1" required>
   <input type=button value="중복검사" id = "check_button" onclick=chid()>
   <input type=hidden id="chk_id2" name="chk_id2">
@@ -53,18 +67,22 @@
   <p><span id="decide" style='color:red;'>ID 중복 여부를 확인해주세요.</span>
   <br><br>
   비밀번호: <input type="password" name="password" required>
-  
+  <span class="error">* <?php 
+    if(!empty($pwderror)){
+      echo $pwderror;
+    }
+  ?></span>
   <br><br> 
   닉네임: <input type="text" name="nickname" required>
   <span class="error">* <?php 
-    if(!empty($nameerror)){
-      echo $nameerror;
-    }
+    
   ?></span>
   <?php 
     
   ?>
-  <input type="submit" name="submit" value="회원가입" id="join_button" disabled=true> 
+  <input type="submit" name="submit" value="회원가입" id="join_button" disabled=true class="signup_submit"/> 
+  </div>
+  
 </form>
 <iframe src="" id="ifrm1" scrolling=no frameborder=no width=0 height=0 name="ifrm1"></iframe>
 
@@ -122,5 +140,11 @@ VALUES ('$user_email', '$user_password','$user_nickname')";
   $conn->close();
 }
 ?>
+</div>
+
+</section>
+
+<?php include_once 'footer.inc' ?>
+  <script src="./src/js/Header.js" ></script>
 </body>
 </html>

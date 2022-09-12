@@ -151,7 +151,6 @@
 }
 .Home .Home_skill .Home_skill_list .Home_skill_detail {
   color: white;
-  background-color: #888;
   height: 500px;
   width: 350px;
   position: relative;
@@ -267,6 +266,18 @@
 }
 .Home .Home_movebtn ul li:hover {
   color: skyblue;
+}
+
+.skill_front {
+  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
+}
+
+.skill_back {
+  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
+}
+
+.skill_db {
+  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
 }
 
 /*# sourceMappingURL=Home.css.map */
