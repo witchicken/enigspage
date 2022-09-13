@@ -199,7 +199,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background-color: #888;
+  background-color: transparent;
 }
 .Home .Home_portfolio {
   min-width: 1000px;
@@ -269,15 +269,33 @@
 }
 
 .skill_front {
-  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center/cover no-repeat url("../img/comp_front.jpg") !important;
+}
+.skill_front a {
+  opacity: 0 !important;
+}
+.skill_front:hover a {
+  opacity: 1 !important;
 }
 
 .skill_back {
-  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center/cover no-repeat url("../img/comp_back.jpg") !important;
+}
+.skill_back a {
+  opacity: 0 !important;
+}
+.skill_back:hover a {
+  opacity: 1 !important;
 }
 
 .skill_db {
-  background: center/cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center/cover no-repeat url("../img/comp_db.jpg") !important;
+}
+.skill_db a {
+  opacity: 0 !important;
+}
+.skill_db:hover a {
+  opacity: 1 !important;
 }
 
 /*# sourceMappingURL=Home.css.map */

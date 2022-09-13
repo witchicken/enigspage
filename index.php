@@ -61,7 +61,7 @@
             <div class="Home_skill_text">
               <h2>Front</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque!</p>
-              <a>more skills</a>
+              <a href="/haveskill.php#move_front">more skills</a>
             </div>
             <div class="Home_skill_bottom">
 
@@ -72,7 +72,7 @@
               <h2>Back</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <a>more skills</a>
+              <a href="/haveskill.php#move_back">more skills</a>
 
             </div>
             <div class="Home_skill_bottom">
@@ -85,7 +85,7 @@
           >
             <div class="Home_skill_text"><h2>DB</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A repellat libero dolor.</p>
-              <a>more skills</a>
+              <a href="/haveskill.php#move_db">more skills</a>
           </div>
           <div class="Home_skill_bottom">
 

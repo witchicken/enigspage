@@ -157,7 +157,7 @@
           left: 0;
           right: 0;
           height: 60px;
-          background-color: #888;
+          background-color: transparent;
         }
       }
     }
@@ -232,11 +232,35 @@
   }
 }
 .skill_front {
-  background: center / cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center / cover no-repeat url("../img/comp_front.jpg") !important;
+  a {
+    opacity: 0 !important;
+  }
+  &:hover {
+    a {
+      opacity: 1 !important;
+    }
+  }
 }
 .skill_back {
-  background: center / cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center / cover no-repeat url("../img/comp_back.jpg") !important;
+  a {
+    opacity: 0 !important;
+  }
+  &:hover {
+    a {
+      opacity: 1 !important;
+    }
+  }
 }
 .skill_db {
-  background: center / cover no-repeat url("../img/dogskill.jpg") !important;
+  background: center / cover no-repeat url("../img/comp_db.jpg") !important;
+  a {
+    opacity: 0 !important;
+  }
+  &:hover {
+    a {
+      opacity: 1 !important;
+    }
+  }
 }
