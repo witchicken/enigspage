@@ -375,35 +375,7 @@
           case 'news':
             echo "<section class=\"introduction_news\" id=\"move_news\">
               <h1 class=\"introduction_news_title\">소식<h1>
-              <div class=\"news_board_container\">
-                <div class=\"news_board_content_list\">
-                  <div class=\"news_board_content\">
-                    <div class=\"news_board_content_img\">img</div>
-                    <div class=\"news_board_content_des\">
-                      <h1>title</h1>
-                      <p>description</p>
-                      <div>
-                        <span>updatedat</span>
-                      </div>
-                    </div>
-
-                    
-                  </div>
-                  <div class=\"news_board_content\">
-                    <div class=\"news_board_content_img\">img</div>
-                    <div class=\"news_board_content_des\">
-                      <h1>title</h1>
-                      <p>description</p>
- 
-                        <span>updatedat</span>
-                   
-                    </div>
-
-                    
-
-                  </div>
-                </div>
-              </div>
+              
             </section>
             ";
             break;

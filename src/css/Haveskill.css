@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 .haveskill {
+  font-family: "Nanum Myeongjo", serif;
   background: #e8e8f3;
   height: auto;
 }
