@@ -25,9 +25,9 @@
           <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>travelAgency</h1>
+              <p>html,css,js</p>
+              <a href="/folio/01_travelAgency">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -41,9 +41,9 @@
         <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>svgcontroller</h1>
+              <p>html,css,js</p>
+              <a href="/folio/02_svgcontrol">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -57,9 +57,9 @@
         <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>simplecountdown</h1>
+              <p>react,css,js</p>
+              <a href="/folio/03_simpleCountdown">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -73,9 +73,9 @@
         <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>enigmusic</h1>
+              <p>html,css,js</p>
+              <a href="/folio/04_enigmusic">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -85,27 +85,14 @@
             </div>
           </div>
         </li>
-        <li><div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
-            <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
-                <span>visit site</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-              </a>
-            </div>
-          </div></li>
         <li>
-        <div class="portfolio_content">
+          <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>weddingform</h1>
+              <p>react,css,express,axios,mysql,</p>
+              <p>heroku.kakaoapi(kakaomap)</p>
+              <a href="https://testwitchicken.herokuapp.com/">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -119,9 +106,9 @@
         <div class="portfolio_content">
             <div class="portfolio_thumbnail"></div>
             <div class="portfolio_des">
-              <h1>title</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, hic.</p>
-              <a>
+              <h1>simplelogin</h1>
+              <p>jsp,jstl,tomcat,servlet,eclipse</p>
+              <a href="/nothosted.php">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -131,6 +118,7 @@
             </div>
           </div>
         </li>
+        
       </ul>
     </div>
   </section>
