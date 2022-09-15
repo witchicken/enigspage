@@ -67,9 +67,26 @@
 .portfolio .portfolio_list ul li .portfolio_content .portfolio_thumbnail {
   width: 220px;
   height: 250px;
-  background: 43% 50%/cover no-repeat url("../img/01_travel.jpg");
   transform: translate(10px, 10px);
   border-radius: 10px;
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_01 {
+  background: 43% 50%/cover no-repeat url("../img/01_travel.jpg");
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_02 {
+  background: 43% 50%/cover no-repeat url("../img/02_svg.jpg");
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_03 {
+  background: 43% 50%/cover no-repeat url("../img/03_countdown.jpg");
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_04 {
+  background: 43% 50%/cover no-repeat url("../img/04_enigmu.jpg");
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_05 {
+  background: 43% 50%/cover no-repeat url("../img/05_weddform.jpg");
+}
+.portfolio .portfolio_list ul li .portfolio_content .thumbnail_06 {
+  background: 43% 50%/cover no-repeat url("../img/06_log.jpg");
 }
 .portfolio .portfolio_list ul li .portfolio_des {
   margin-top: 30px;

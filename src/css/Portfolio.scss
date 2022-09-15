@@ -67,9 +67,27 @@
           .portfolio_thumbnail {
             width: 220px;
             height: 250px;
-            background: 43% 50% / cover no-repeat url("../img/01_travel.jpg");
+
             transform: translate(10px, 10px);
             border-radius: 10px;
+          }
+          .thumbnail_01 {
+            background: 43% 50% / cover no-repeat url("../img/01_travel.jpg");
+          }
+          .thumbnail_02 {
+            background: 43% 50% / cover no-repeat url("../img/02_svg.jpg");
+          }
+          .thumbnail_03 {
+            background: 43% 50% / cover no-repeat url("../img/03_countdown.jpg");
+          }
+          .thumbnail_04 {
+            background: 43% 50% / cover no-repeat url("../img/04_enigmu.jpg");
+          }
+          .thumbnail_05 {
+            background: 43% 50% / cover no-repeat url("../img/05_weddform.jpg");
+          }
+          .thumbnail_06 {
+            background: 43% 50% / cover no-repeat url("../img/06_log.jpg");
           }
         }
         .portfolio_des {

@@ -103,21 +103,21 @@
         
         <div class="Home_portfolio_list">
           <div class="Home_portfolio_detail">
-              <div class="Home_portfolio_img"></div>
+              <div class="Home_portfolio_img Home_port_img_01"></div>
             <a>lorem</a>
 
           </div>
           <div class="Home_portfolio_detail">
-            <div class="Home_portfolio_img"></div>
+            <div class="Home_portfolio_img Home_port_img_02"></div>
             <a>lorem</a>
           </div>
           <div class="Home_portfolio_detail">
-            <div class="Home_portfolio_img"></div>
+            <div class="Home_portfolio_img Home_port_img_03"></div>
             <a>lorem</a>
 
           </div>
           <div class="Home_portfolio_detail">
-            <div class="Home_portfolio_img"></div>
+            <div class="Home_portfolio_img Home_port_img_04"></div>
             <a>lorem</a>
 
           </div>
@@ -125,7 +125,7 @@
           
         </div>
         <div class="Home_portfolio_more">
-            <a>more portfolio...</a>
+            <a href="/portfolio.php">more portfolio...</a>
           </div>
         
       </section>

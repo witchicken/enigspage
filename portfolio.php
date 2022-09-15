@@ -23,11 +23,11 @@
       <ul>
         <li>
           <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_01"></div>
             <div class="portfolio_des">
               <h1>travelAgency</h1>
               <p>html,css,js</p>
-              <a href="/folio/01_travelAgency">
+              <a href="/folio/01_travelAgency" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -39,11 +39,11 @@
         </li>
         <li>
         <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_02"></div>
             <div class="portfolio_des">
               <h1>svgcontroller</h1>
               <p>html,css,js</p>
-              <a href="/folio/02_svgcontrol">
+              <a href="/folio/02_svgcontrol" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -55,11 +55,11 @@
         </li>
         <li>
         <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_03"></div>
             <div class="portfolio_des">
               <h1>simplecountdown</h1>
               <p>react,css,js</p>
-              <a href="/folio/03_simpleCountdown">
+              <a href="/folio/03_simpleCountdown" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -71,11 +71,11 @@
         </li>
         <li>
         <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_04"></div>
             <div class="portfolio_des">
               <h1>enigmusic</h1>
               <p>html,css,js</p>
-              <a href="/folio/04_enigmusic">
+              <a href="/folio/04_enigmusic" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -87,12 +87,12 @@
         </li>
         <li>
           <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_05"></div>
             <div class="portfolio_des">
               <h1>weddingform</h1>
               <p>react,css,express,axios,mysql,</p>
               <p>heroku.kakaoapi(kakaomap)</p>
-              <a href="https://testwitchicken.herokuapp.com/">
+              <a href="https://testwitchicken.herokuapp.com/" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -104,11 +104,11 @@
         </li>
         <li>
         <div class="portfolio_content">
-            <div class="portfolio_thumbnail"></div>
+            <div class="portfolio_thumbnail thumbnail_06"></div>
             <div class="portfolio_des">
               <h1>simplelogin</h1>
               <p>jsp,jstl,tomcat,servlet,eclipse</p>
-              <a href="/nothosted.php">
+              <a href="/nothosted.php" target="_blank">
                 <span>visit site</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>

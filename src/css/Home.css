@@ -228,9 +228,20 @@
   justify-content: space-between;
 }
 .Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_portfolio_img {
-  height: 350px;
-  width: 270px;
-  background-color: #888;
+  height: 250px;
+  width: 220px;
+}
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_port_img_01 {
+  background: 43% 50%/cover no-repeat url("../img/01_travel.jpg");
+}
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_port_img_02 {
+  background: 43% 50%/cover no-repeat url("../img/02_svg.jpg");
+}
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_port_img_03 {
+  background: 43% 50%/cover no-repeat url("../img/03_countdown.jpg");
+}
+.Home .Home_portfolio .Home_portfolio_list .Home_portfolio_detail .Home_port_img_04 {
+  background: 43% 50%/cover no-repeat url("../img/04_enigmu.jpg");
 }
 .Home .Home_portfolio .Home_portfolio_more {
   margin-top: 40px;
